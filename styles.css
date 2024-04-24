@@ -313,7 +313,19 @@ img {
     transform: none; 
 }
 
+.skill-2 img {
+    width: 40px;
+  
+}
 
+.skill-3 img {
+    width: 46px;
+  
+}
+
+.skill-4 img {
+    width: 59px;
+}
 
 } 
 
