@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-background-color: #eac5f8;
+background-color: #ecdaf1;
 }
 
 body {
@@ -162,7 +162,8 @@ margin-top: 10px;
     transition: 0.3s;
 }
 button {
-    background-color: rgba(155, 155, 155, 0.452)  ;
+    background-color: rgb(0, 0, 0)  ;
+    
     padding-left: 35px;
     padding-right: 35px;
     /* padding-top: 2px;
@@ -202,15 +203,25 @@ img {
 
 
  @media screen and (max-width: 768px) {
+    
+    * {
+        background-color: #ecdaf1;
+    }
+    
+    
     .container {
         text-align: center;
         width: 100%;
     }
+
+    
     
     .experience-container {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
         align-items: center;
         justify-content: center;
     }
@@ -219,15 +230,24 @@ img {
         max-width: 90%; 
         gap: 13px; 
         display: flex;
-        position: relative;
+        position: relative;     
+        flex-direction: column;
+        align-items: center;
         justify-content: center; 
     }
     
+
+.info-experience {
+    display: none; 
+   
+}
+
 
     
     .container-experience img {
         max-width: 100%; 
         height: auto; 
+        display: block;
     }
 
 
@@ -261,9 +281,25 @@ img {
     align-items: center;
 }
 
-.info-experience {
-    display: none;
+.avatar img {
+    max-height: 120px; 
+    max-width: 100%;
 }
+
+.line {
+
+    margin-top: 50px;
+    background-color: #450f5879;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
 
 img {
     max-width: 90%;
@@ -278,14 +314,6 @@ img {
 }
 
 
-.experience-1:hover  {
-    background-color: rgba(64, 245, 145, 0.39);
-   cursor: pointer;
-}
-.container-experience a:hover img {
-    opacity: 0.7; 
-    transition: opacity 0.3s ease; 
-}
 
 } 
 
